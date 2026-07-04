@@ -1,9 +1,1 @@
-# Datasets utilizados
 
-En esta carpeta se encuentran los conjuntos de datos utilizados en los distintos proyectos desarrollados dentro de este repositorio.
-
-Los datasets provienen de fuentes públicas y fueron seleccionados por su utilidad para aplicar y demostrar diferentes técnicas de análisis de datos, visualización, limpieza, transformación, modelamiento y aprendizaje automático.
-
-Cada proyecto utiliza el dataset más adecuado según sus objetivos. Cuando corresponde, se incluyen versiones preprocesadas o adaptadas para facilitar la reproducibilidad de los análisis.
-
-> **Nota:** Los datasets son utilizados únicamente con fines educativos, de aprendizaje y demostración de competencias en Ciencia de Datos y Análisis de Datos.

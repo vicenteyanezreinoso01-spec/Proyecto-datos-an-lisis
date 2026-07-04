@@ -15,8 +15,7 @@ generando insights de negocio a partir de datos crudos y desordenados.
 Python, pandas, matplotlib, seaborn, Jupyter/Google Colab
 
 ## 📦 Dataset sugerido
-Dataset de ventas retail/supermercado (buscar en Kaggle: "retail sales dataset" 
-o "supermarket sales")
+https://raw.githubusercontent.com/vicenteyanezreinoso01-spec/Proyecto-datos-an-lisis/refs/heads/main/Proyecto1_Analisis_Descriptivo/retail_store_sales.csv
 
 ## 🗺️ Ruta paso a paso
 

@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/vicenteyanezreinoso01-spec/Proyecto-datos-an-l
 | 3 | Calcular medidas de tendencia central y dispersión por categoría |
 | 4 | Visualizar distribuciones (histogramas) de las variables numéricas clave |
 | 5 | Identificar y analizar outliers |
-| 6 | Redactar 3-5 conclusiones de negocio basadas en los hallazgos |
+| 6 | Redactar 2 conclusiones de negocio basadas en los hallazgos |
 
 ## ✅ Entregables
 - [ ] Notebook con el análisis completo

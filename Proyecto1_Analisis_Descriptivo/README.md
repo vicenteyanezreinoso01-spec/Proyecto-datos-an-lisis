@@ -32,6 +32,3 @@ https://raw.githubusercontent.com/vicenteyanezreinoso01-spec/Proyecto-datos-an-l
 - [ ] Notebook con el análisis completo
 - [ ] Mínimo 4 visualizaciones
 - [ ] Sección de conclusiones en lenguaje de negocio (no solo técnico)
-
-## 📝 Notas personales
-_(completar durante el desarrollo del proyecto)_

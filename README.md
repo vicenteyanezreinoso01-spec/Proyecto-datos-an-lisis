@@ -14,7 +14,7 @@ clasificación, clustering, series temporales y pipelines de datos.
 
 | # | Proyecto | Habilidad central | Tecnología | Nivel | Estado |
 |---|----------|-------------------|------------|-------|--------|
-| 1 | [Análisis Descriptivo de Ventas Retail](./Proyecto1_Analisis_Descriptivo) | Limpieza + EDA | pandas, seaborn | 🟢 Básico | ⬜ Pendiente |
+| 1 | [Análisis Descriptivo de Ventas Retail](./Proyecto1_Analisis_Descriptivo) | Limpieza + EDA | pandas, seaborn | 🟢 Básico | Completado |
 | 2 | [Dashboard de Indicadores Comerciales](./Proyecto2_Dashboard_Comercial) | Visualización + storytelling | Power BI | 🟢 Básico | ⬜ Pendiente |
 | 3 | [Predicción de Precios de Viviendas](./Proyecto3_Regresion_Precios) | Regresión lineal | StatsModels, Scikit-Learn | 🟡 Básico-Intermedio | ⬜ Pendiente |
 | 4 | [Predicción de Churn Bancario](./Proyecto4_Churn_Bancario) | Clasificación | Scikit-Learn | 🟡 Intermedio | ⬜ Pendiente |

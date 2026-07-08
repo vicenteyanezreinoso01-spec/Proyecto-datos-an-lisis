@@ -20,7 +20,7 @@ Python, pandas, matplotlib, seaborn, numpy, Jupyter/Google Colab
 
 | Paso | Actividad |
 |---|---|
-| 1 | Cargar las 9 tablas y hacer inspección inicial (`.info()`, `.describe()`, `.head()`) |
+| 1 | Cargar las 8 tablas y hacer inspección inicial (`.info()`, `.describe()`, `.head()`) |
 | 2 | Unir las tablas clave con `pd.merge()` (orders, customers, order_items, products, payments) |
 | 3 | Traducir categorías de producto al inglés usando la tabla de traducción |
 | 4 | Calcular KPIs de negocio: ventas totales, ticket promedio, tendencia mensual, categorías top |

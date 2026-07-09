@@ -21,12 +21,12 @@ Dataset limpio (sin valores nulos), elegido deliberadamente para poder concentra
 
 | Fase | Contenido | Estado |
 |---|---|---|
-| 1 | Carga y exploración de datos (EDA) | 🟢 En curso |
-| 2 | Regresión lineal simple con Scikit-Learn | ⬜ Pendiente |
-| 3 | Interpretación estadística con StatsModels (coeficientes, p-values, R²) | ⬜ Pendiente |
-| 4 | Diagnóstico de supuestos (residuos, homocedasticidad, multicolinealidad) | ⬜ Pendiente |
-| 5 | Evaluación del modelo (RMSE, MAE) | ⬜ Pendiente |
-| 6 | Regularización: Ridge vs Lasso | ⬜ Pendiente |
+| 1 | Carga y exploración de datos (EDA) 
+| 2 | Regresión lineal simple con Scikit-Learn 
+| 3 | Interpretación estadística con StatsModels (coeficientes, p-values, R²) 
+| 4 | Diagnóstico de supuestos (residuos, homocedasticidad, multicolinealidad) 
+| 5 | Evaluación del modelo (RMSE, MAE) 
+| 6 | Regularización: Ridge vs Lasso 
 
 ## 📐 Conceptos estadísticos trabajados
 

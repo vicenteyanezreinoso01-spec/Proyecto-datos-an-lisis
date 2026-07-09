@@ -43,15 +43,3 @@ Este proyecto pone foco explícito en fundamentos que sostienen cualquier modelo
 
 `Python` · `pandas` · `numpy` · `matplotlib` · `seaborn` · `scikit-learn` · `statsmodels`
 
-## 📁 Estructura
-
-```
-proyecto3-precios-vivienda/
-├── README.md
-└── Proyecto3_Vivienda_California.ipynb
-```
-
-## ▶️ Cómo ejecutar
-
-1. Abrir el notebook en Google Colab o Jupyter
-2. Ejecutar las celdas en orden (no requiere descarga de archivos externos, el dataset se carga directo desde `scikit-learn`)

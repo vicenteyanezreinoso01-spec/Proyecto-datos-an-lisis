@@ -16,7 +16,7 @@ clasificación, clustering, series temporales y pipelines de datos.
 |---|----------|-------------------|------------|-------|--------|
 | 1 | [Análisis Descriptivo de Ventas Retail](./Proyecto1_Analisis_Descriptivo) | Limpieza + EDA | matplotlib plt.hist, plt.bar, .boxplot | 🟢 Básico | Completado |
 | 2 | [Dashboard de Indicadores Comerciales](https://github.com/vicenteyanezreinoso01-spec/Proyecto-datos-an-lisis/tree/main/Proyecto2_Dashboard%20de%20Indicadores%20Comerciales) | Visualización + storytelling | pandas, matplotlib, seaborn | 🟢 Básico | Completado |
-| 3 | [Predicción de Precios de Viviendas](./Proyecto3_Prediccion_precio_viviedas) | Regresión lineal | StatsModels, Scikit-Learn | 🟡 Básico-Intermedio | ⬜ Pendiente |
+| 3 | [Predicción de Precios de Viviendas](./Proyecto3_Prediccion_precio_viviedas) | Regresión lineal | StatsModels, Scikit-Learn | 🟡 Básico-Intermedio | Completado |
 | 4 | [Predicción de Churn Bancario](./Proyecto4_Churn_Bancario) | Clasificación | Scikit-Learn | 🟡 Intermedio | ⬜ Pendiente |
 | 5 | [Segmentación de Clientes](./Proyecto5_Segmentacion_Clientes) | Clustering | K-Means, PCA | 🟡 Intermedio | ⬜ Pendiente |
 | 6 | [Forecasting de Demanda](./Proyecto6_Forecasting_Demanda) | Series temporales | Prophet, ARIMA | 🟠 Intermedio | ⬜ Pendiente |

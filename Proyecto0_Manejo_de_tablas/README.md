@@ -24,14 +24,6 @@ returns_df = pd.read_excel(url, sheet_name="Returns")
 people_df  = pd.read_excel(url, sheet_name="People")
 ```
 
-## Requisitos
-
-- Python 3
-- `pandas`
-- `numpy`
-
-Desarrollado y ejecutado en Google Colab; también corre en cualquier Jupyter Notebook estándar.
-
 ## Estructura del notebook
 
 **Exploración de datos** — revisión inicial de las tres tablas (`head()`, `info()`, `describe()`, nulos y duplicados) antes de manipular nada.

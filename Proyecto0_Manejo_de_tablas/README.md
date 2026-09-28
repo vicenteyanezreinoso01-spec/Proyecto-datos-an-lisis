@@ -49,8 +49,3 @@ Desarrollado y ejecutado en Google Colab; también corre en cualquier Jupyter No
 ## Metodología
 
 A partir de la Parte 3, los ejercicios se plantean como **encargos de negocio** — un correo de un área específica (Comercial, Logística, Finanzas, Riesgo Crediticio, Control de Calidad) pidiendo un análisis concreto, sin indicar qué método usar — en vez de instrucciones técnicas paso a paso. La idea es practicar la traducción de un requerimiento de negocio real a código, no solo la sintaxis de pandas de forma aislada.
-
-## En desarrollo
-
-- **Parte 0 — Limpieza de datos**: auditoría y corrección de una versión intencionalmente corrupta del dataset (espacios sobrantes, mayúsculas/minúsculas inconsistentes, tipos de dato incorrectos, valores imposibles, claves de merge sucias), con reconciliación final de métricas contra el dataset original.
-- `melt` (transformación de formato ancho a largo).

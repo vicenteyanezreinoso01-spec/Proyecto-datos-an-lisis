@@ -1,0 +1,85 @@
+# Proyecto1_Churn_Bancario
+
+Predicción de **fuga de clientes (churn)** en un banco: identificar qué clientes tienen mayor probabilidad de cerrar su cuenta, para que el área comercial pueda actuar antes de perderlos.
+
+## Problema de negocio
+
+Retener a un cliente cuesta mucho menos que conseguir uno nuevo. Si el banco puede anticipar quién está por irse, puede enfocar sus acciones de retención (ofertas, contacto, mejoras de producto) en esos clientes, en vez de repartir el esfuerzo en toda la cartera.
+
+El objetivo del proyecto es doble:
+
+1. **Entender** qué características del cliente están asociadas a la fuga.
+2. **Predecir** la probabilidad de churn de cada cliente con un modelo de clasificación.
+
+## Dataset
+
+Archivo: [`bank.csv`](./bank.csv) — 10.000 clientes, 12 columnas. Obtenido del repositorio público del curso ICS40125 ([fralfaro/ICS40125](https://github.com/fralfaro/ICS40125)).
+
+```python
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/vicenteyanezreinoso01-spec/Proyecto-datos-an-lisis/main/Proyecto1_Churn_Bancario/bank.csv"
+bank_df = pd.read_csv(url)
+```
+
+### Diccionario de datos
+
+| Columna | Tipo | Descripción |
+|---|---|---|
+| `customer_id` | entero | Identificador del cliente (no aporta información predictiva). |
+| `credit_score` | entero | Puntaje crediticio (350 – 850). |
+| `country` | texto | País: France, Germany, Spain. |
+| `gender` | texto | Female / Male. |
+| `age` | entero | Edad (18 – 92). |
+| `tenure` | entero | Años como cliente del banco (0 – 10). |
+| `balance` | decimal | Saldo en cuenta. |
+| `products_number` | entero | Cantidad de productos contratados (1 – 4). |
+| `credit_card` | 0/1 | Tiene tarjeta de crédito. |
+| `active_member` | 0/1 | Es cliente activo. |
+| `estimated_salary` | decimal | Salario estimado. |
+| `churn` | 0/1 | **Variable objetivo**: 1 = el cliente se fue. |
+
+### Calidad de datos
+
+- Sin valores nulos.
+- Sin filas duplicadas ni `customer_id` repetidos.
+- Tipos de dato consistentes con su contenido.
+
+El dataset viene limpio, así que el trabajo se concentra en análisis, preparación de variables y modelado.
+
+## Hallazgos iniciales
+
+Tasa de churn global: **20,4 %** (2.037 de 10.000 clientes).
+
+| Variable | Observación |
+|---|---|
+| **Edad** | El factor más marcado. El churn sube de 7,5 % (18–30 años) a 34 % (41–50) y 56 % (51–60), y vuelve a bajar a 25 % sobre los 60. La relación no es lineal. |
+| **Productos contratados** | 1 producto: 28 %. 2 productos: 7,6 %. 3 productos: 83 %. 4 productos: 100 %. Ojo: los grupos de 3 y 4 son chicos (266 y 60 clientes). |
+| **País** | Alemania duplica la tasa de fuga (32 %) frente a Francia y España (~16 %). |
+| **Actividad** | Los clientes inactivos se van casi el doble que los activos (27 % vs 14 %). |
+| **Género** | Mujeres 25 %, hombres 16,5 %. |
+| **Saldo** | El 36 % de los clientes tiene saldo 0, y se van menos (13,8 %) que los que tienen saldo (24 %). |
+| **Sin relación clara** | `tenure`, `credit_card`, `estimated_salary` y `credit_score` casi no cambian entre quienes se van y quienes se quedan. |
+
+### Advertencia: clases desbalanceadas
+
+Solo 1 de cada 5 clientes hace churn. Un modelo que prediga "nadie se va" acertaría el 79,6 % de las veces sin servir para nada. Por eso la **accuracy no sirve como métrica principal**: el proyecto se evalúa con recall, precisión, F1 y ROC-AUC sobre la clase churn.
+
+## Plan de trabajo
+
+- [ ] Análisis exploratorio (distribuciones, churn por variable, correlaciones).
+- [ ] Preparación: eliminar `customer_id`, codificar `country` y `gender`, escalar variables numéricas cuando el modelo lo requiera.
+- [ ] División entrenamiento / prueba estratificada por `churn`.
+- [ ] Modelo base (regresión logística) y comparación con modelos de árboles.
+- [ ] Manejo del desbalance de clases.
+- [ ] Evaluación con métricas adecuadas y ajuste del umbral de decisión.
+- [ ] Interpretación: qué variables pesan más y qué recomendaciones concretas se desprenden para el negocio.
+
+## Requisitos
+
+- Python 3
+- `pandas`, `numpy`
+- `matplotlib` / `seaborn` (visualización)
+- `scikit-learn` (modelado)
+
+Desarrollado en Google Colab.
